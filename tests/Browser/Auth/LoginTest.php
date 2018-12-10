@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Browser;
+namespace Tests\Browser\Auth;
 
 use App\User;
 use Tests\DuskTestCase;
@@ -18,11 +18,10 @@ class LoginTest extends DuskTestCase
 
         $this->browse(function (Browser $browser) use ($user) {
             $browser->visit('/login')
-                    ->assertSee('E-Mail Address')
                     ->type('email', $user->email)
                     ->type('password', 'secret')
                     ->press('Login')
-                    ->assertSee('You are logged in!');
+                    ->assertPathIs('/home');
         });
     }
 }
