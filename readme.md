@@ -12,4 +12,4 @@ Hanya sebatas untuk mencoba latihan dalam pembuatan aplikasi dengan metode TDD (
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [GNU/GPL-3.0](https://opensource.org/licenses/GPL-3.0).
+Di bangun di bawah standar [GNU/GPL-3.0](https://opensource.org/licenses/GPL-3.0).
