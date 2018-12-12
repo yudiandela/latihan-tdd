@@ -4,12 +4,9 @@ namespace Tests\Browser\Auth;
 
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class RegisterTest extends DuskTestCase
 {
-    use DatabaseMigrations;
-
     /** @test */
     public function UserRegister()
     {

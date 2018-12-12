@@ -5,12 +5,9 @@ namespace Tests\Browser\Auth;
 use App\Models\User;
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class LoginTest extends DuskTestCase
 {
-    use DatabaseMigrations;
-
     /** @test */
     public function UserLogin()
     {

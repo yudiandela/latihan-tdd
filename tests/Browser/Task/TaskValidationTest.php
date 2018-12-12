@@ -5,12 +5,9 @@ namespace Tests\Browser\Task;
 use App\Models\Task;
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class TaskValidationTest extends DuskTestCase
 {
-    use DatabaseMigrations;
-
     /** @test */
     public function taskRequiredValidation()
     {
