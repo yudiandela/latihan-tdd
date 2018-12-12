@@ -1,0 +1,12 @@
+watch:
+  directories:
+    - Browser
+    - src
+    - tests
+  fileMask: '*.php'
+notifications:
+  passingTests: false
+  failingTests: false
+phpunit:
+  binaryPath: php artisan dusk
+  arguments: '--stop-on-failure'
